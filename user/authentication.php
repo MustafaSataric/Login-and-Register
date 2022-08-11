@@ -20,13 +20,13 @@ function send(){
 			}</script>";
 	require_once __DIR__.'/../vendor/autoload.php';
 	$transport = new Swift_SmtpTransport('smtp.gmail.com', 465,'ssl');
-	$transport->setUsername('semasljivovica@gmail.com');
-	$transport->setPassword('isamxvxuoqczpnzh');
+	$transport->setUsername('TYPE HERE YOUR EMAIL');
+	$transport->setPassword('TYPE HERE YOUR PASSWORD');
 	
 	$mailer = new Swift_Mailer($transport);
 	
 	$message = new Swift_Message('Mein Betreff v1');
-	$message->setFrom(['semasljivovica@gmail.com'=>'Administrator']);
+	$message->setFrom(['TYPE HERE YOUR EMAIL'=>'Administrator']);
 	$message->setTo([$_SESSION['email']=>'User']);
 	$message->setBody('
 	Hallo this is an Authentication code that is going to expire in 15 Minutes.	\n
