@@ -12,5 +12,5 @@ Responsive PHP Login and Register with multifactor authentication.
   -> open https://myaccount.google.com/security
   -> authenticate your account
   -> configure a app password you need it IMPORTANT!!!
-6. Now type your password in the line xx in the php file
+6. Now type your email and password in the line xx in the php file user/authentication.php
 5. Now you can open the programm in the browser just type "http://127.0.0.1/WebDev/LoginandRegister/assets/login.php"
