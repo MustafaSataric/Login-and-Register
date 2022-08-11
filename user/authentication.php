@@ -9,7 +9,7 @@ if(!isset($_SESSION['email'])) {
 if(!isset($_SESSION['authv2'])){
 	$_SESSION['authv2'] = rand(1000, 9999);
 }
-echo $_SESSION['authv2'];
+// echo $_SESSION['authv2'];
 send();
 function send(){
 	error_reporting(E_ALL);
